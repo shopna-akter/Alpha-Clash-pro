@@ -14,7 +14,21 @@ function removeBackgrounColorById(elementById){
     const element = document.getElementById(elementById);
     element.classList.remove('bg-amber-500');
 } 
-
+function getTextElementValueById(elementById){
+    const element =document.getElementById(elementById);
+    const elementValueText =element.innerText;
+    const value = parseInt(elementValueText);
+    return value
+}
+function setTextElementValueById(elementById , value){
+    const element =document.getElementById(elementById);
+    element.innerText = value;
+}
+function getTextElementById(elementById){
+    const element = document.getElementById(elementById);
+    const text = element.innerText;
+    return text
+}
 function getRandomAlphabet(){
     const alphabetList = 'abcdefghijklmnopqrstuvwxyz/';
     const alphabets = alphabetList.split('');
